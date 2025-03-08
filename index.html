@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Meal Plan</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    
+    <h1 class="heading">NUTRITECH</h1>
+    
+    <!-- The form will be here initially -->
+    <form id="nutritionForm">
+        <div class="form-step active">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <button type="button" onclick="nextStep()">Next</button>
+        </div>
+
+        <div class="form-step">
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" name="height" required>
+
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" name="weight" required>
+
+            <button type="button" onclick="prevStep()">Back</button>
+            <button type="button" onclick="nextStep()">Next</button>
+        </div>
+
+        <div class="form-step">
+            <label for="diet">Diet Type:</label>
+            <select id="diet" name="diet" required>
+                <option value="Balanced">Balanced</option>
+                <option value="Vegetarian">Vegetarian</option>
+                <option value="Vegan">Vegan</option>
+                <option value="Keto">Keto</option>
+                <option value="Paleo">Paleo</option>
+            </select>
+
+            <label for="allergies">Allergies (comma separated):</label>
+            <input type="text" id="allergies" name="allergies" placeholder="e.g., nuts, dairy">
+
+            <button type="button" onclick="prevStep()">Back</button>
+            <button type="button" onclick="nextStep()">Next</button>
+        </div>
+
+        <div class="form-step">
+            <label for="healthGoals">Health Goal:</label>
+            <select id="healthGoals" name="healthGoals" required>
+                <option value="Weight Loss">Weight Loss</option>
+                <option value="Muscle Gain">Muscle Gain</option>
+                <option value="General Health">General Health</option>
+            </select>
+
+            <label for="activityLevel">Activity Level:</label>
+            <select id="activityLevel" name="activityLevel" required>
+                <option value="Sedentary">Sedentary</option>
+                <option value="Moderate">Moderate</option>
+                <option value="Active">Active</option>
+            </select>
+
+            <button type="button" onclick="prevStep()">Back</button>
+            <button type="button" onclick="generateMealPlan()">Generate Meal Plan</button>
+        </div>
+    </form>
+
+    <!-- The Personalized Meal Plan Button will be hidden initially -->
+    <button id="mealPlanButton" style="display:none;" onclick="showMealPlan()">Your Personalized Meal Plan</button>
+
+    <div id="mealPlanContainer" style="display:none;">
+        <h2>Your Personalized Meal Plan</h2>
+        <div id="mealPlanOutput"></div>
+        <button id="backToFormButton" onclick="goBackToForm()">Back to Form</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

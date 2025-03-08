@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  
+  /* Set Background Image */
+  background-image: url('background.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  
+  /* Keep the background fixed */
+  background-attachment: fixed;
+
+  /* Ensure text is readable */
+  color: black;
+}
+.heading {
+  text-align: center; /* Centers the text */
+  font-size: 4rem; /* Increases font size */
+  font-weight: bold; /* Makes it bold */
+  margin-top: 20px; /* Adds space at the top */
+  color: white; /* Optional: Change color */
+}
+form {
+ /* background: white;*/
+ background: rgba(255, 255, 255, 0.3); /* Transparent background */
+ backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 400px;
+  margin: auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+button {
+  background: #1E3A5F;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #4a7ab5;
+}
+
+.form-step {
+  display: none;
+}
+
+.form-step.active {
+  display: block;
+}
+
+#mealPlanContainer {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f6e0d9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  overflow: auto;
+  
+}
+
+#mealPlanContainer h2 {
+  color: #341902;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.meal-day {
+  background-color: #ead1c0;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 15px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.meal-day h3 {
+  color: #2c3e50;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.meal-category {
+  font-weight: bold;
+  color: #703604;
+}
+
+.meal-text {
+  font-size: 16px;
+  color: #333;
+  margin-top: 5px;
+}
+#mealPlanButton {
+  background-color: #28a745; /* Green for positive action */
+  color: white;
+  font-size: 1.2rem;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
+}
+
+#mealPlanButton:hover {
+  background-color: #218838; /* Darker green on hover */
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+#mealPlanButton:active {
+  transform: scale(0.98); /* Shrink effect when clicked */
+}
+
+/* Styling for the "Back to Form" Button */
+#backToFormButton {
+  background-color: #dc3545; /* Red for a negative action */
+  color: white;
+  font-size: 1.2rem;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
+}
+
+#backToFormButton:hover {
+  background-color: #c82333; /* Darker red on hover */
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+#backToFormButton:active {
+  transform: scale(0.98); /* Shrink effect when clicked */
+}
+
+/* Optional: Button container to make sure the buttons stay centered */
+button, #backToFormButton, #mealPlanButton {
+  display: inline-block;
+  margin: 10px auto;
+}
