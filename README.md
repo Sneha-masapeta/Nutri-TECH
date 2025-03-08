@@ -6,3 +6,6 @@ A web-based application designed to provide users with detailed nutritional info
 Many individuals struggle with creating healthy and satisfying meal plans that align with their specific needs and preferences. NutriGen addresses this challenge by generating personalized meal plans based on user input. Users can provide information about their dietary restrictions, allergies, health conditions, activity levels, and taste preferences. The AI then crafts a week-long meal plan with recipes and grocery lists, ensuring nutritional balance, variety, and enjoyment.
 
 
+# VIDEO EXPLANATION 
+Below is the drive link of a video that guides you through our WEBSITE and trained GEMINI AI model :
+https://drive.google.com/file/d/1WA8kb7qozbnSrfzAxk7j4c3ioAvaK3Yp/view?usp=sharing
